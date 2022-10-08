@@ -33,6 +33,6 @@ struct Movie: Codable, Identifiable {
     }
     var titleWithLanguage: String {
         guard let title = title, let lang = originalLanguage else { return "" }
-        return "\(title)(\(lang)"
+        return "\(title)\(lang)"
     }
 }
