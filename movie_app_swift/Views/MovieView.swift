@@ -25,10 +25,10 @@ struct MovieView: View {
         VStack {
             VStack(alignment: .leading) {
                 Text(tabs[selectionIndex])
-                    .font(.largeTitle)
+                    .font(.title)
                     .bold()
                     .foregroundColor(.red)
-                    .padding(.top)
+                    .padding(.leading)
                 
                 HStack {
                     Image(systemName: "magnifyingglass")
@@ -40,13 +40,12 @@ struct MovieView: View {
                 
                 VStack {
                     Picker("_", selection: $selectionIndex) {
-                        ForEach(0..<tabs.count) { index in
+                        ForEach(0..<tabs.count, id: \.self) { index in
                             Text(tabs[index])
                                 .font(.title)
                                 .bold()
                                 .tag(index)
-                        }.pickerStyle(SegmentedPickerStyle())
-                            .onChange(of: selectionIndex) { (_) in
+                        }.onChange(of: selectionIndex) { (_) in
                                 if selectionIndex == 0 {
                                     movieManager.getNowPlaying()
                                 } else if selectionIndex == 1 {
@@ -55,12 +54,13 @@ struct MovieView: View {
                                     movieManager.getPopular()
                                 }
                             }
-                    }.padding()
+                    }.pickerStyle(SegmentedPickerStyle())
+                    .padding()
                     
                     List {
                         ForEach(movieManager.movies.filter { searchTerm.isEmpty ? true : $0.title?.lowercased().localizedStandardContains(searchTerm.lowercased()) ?? true}) { movie in
-                            NavigationLink(destination: Text(movie.title ?? "")) {
-                                Text(movie.title ?? "")
+                            NavigationLink(destination: MovieDetailView(movie: movie)) {
+                                MovieCell(movie: movie)
                             }.listRowBackground(Color.clear)
                         }
                     }.onAppear {

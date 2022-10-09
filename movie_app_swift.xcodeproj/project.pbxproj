@@ -28,6 +28,9 @@
 		CDF1AC7028F165950087892D /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF1AC6F28F165950087892D /* ImageCache.swift */; };
 		CDF1AC7228F16DB10087892D /* EnvironmentValues+ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF1AC7128F16DB10087892D /* EnvironmentValues+ImageCache.swift */; };
 		CDF1AC7428F16E540087892D /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF1AC7328F16E540087892D /* AsyncImage.swift */; };
+		CDF1AC7628F287350087892D /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF1AC7528F287350087892D /* MovieCell.swift */; };
+		CDF1AC7828F29B0B0087892D /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF1AC7728F29B0B0087892D /* MovieDetailView.swift */; };
+		CDF1AC7A28F2B37F0087892D /* MovieReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF1AC7928F2B37F0087892D /* MovieReviewView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,9 @@
 		CDF1AC6F28F165950087892D /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		CDF1AC7128F16DB10087892D /* EnvironmentValues+ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnvironmentValues+ImageCache.swift"; sourceTree = "<group>"; };
 		CDF1AC7328F16E540087892D /* AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
+		CDF1AC7528F287350087892D /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		CDF1AC7728F29B0B0087892D /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
+		CDF1AC7928F2B37F0087892D /* MovieReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieReviewView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +151,9 @@
 				CDF1AC5428F0A49F0087892D /* SettingsView.swift */,
 				CDF1AC5628F149CD0087892D /* MovieView.swift */,
 				CDF1AC5828F149E60087892D /* DiscoverView.swift */,
+				CDF1AC7528F287350087892D /* MovieCell.swift */,
+				CDF1AC7728F29B0B0087892D /* MovieDetailView.swift */,
+				CDF1AC7928F2B37F0087892D /* MovieReviewView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -235,10 +244,13 @@
 				CDF1AC5328F0A2080087892D /* HomeTabView.swift in Sources */,
 				CDF1AC6428F153D60087892D /* NetworlManager.swift in Sources */,
 				CDF1AC6C28F15BD50087892D /* MovieReviewsManager.swift in Sources */,
+				CDF1AC7A28F2B37F0087892D /* MovieReviewView.swift in Sources */,
+				CDF1AC7828F29B0B0087892D /* MovieDetailView.swift in Sources */,
 				CDF1AC7428F16E540087892D /* AsyncImage.swift in Sources */,
 				CDF1AC5528F0A49F0087892D /* SettingsView.swift in Sources */,
 				CDF1AC7228F16DB10087892D /* EnvironmentValues+ImageCache.swift in Sources */,
 				CDF1AC6828F157180087892D /* MovieURL.swift in Sources */,
+				CDF1AC7628F287350087892D /* MovieCell.swift in Sources */,
 				CDF1AC4328F090380087892D /* ContentView.swift in Sources */,
 				CDF1AC6E28F1650A0087892D /* ImageLoading.swift in Sources */,
 				CDF1AC4128F090380087892D /* movie_app_swiftApp.swift in Sources */,
@@ -379,6 +391,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -408,6 +421,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

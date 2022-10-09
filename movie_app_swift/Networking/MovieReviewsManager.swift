@@ -11,7 +11,9 @@ final class MovieReviewsManager: ObservableObject {
         self.movie = movie
     }
     
-    func getMovieReviews() {}
+    func getMovieReviews() {
+        getReview(for: movie)
+    }
     
     private func getReview(for movie: Movie) {
         let urlString = "\(Self.baseURL)\(movie.id ?? 100)/reviews?api_key=\(API.key)"

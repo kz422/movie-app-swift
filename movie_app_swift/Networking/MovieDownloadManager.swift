@@ -18,7 +18,7 @@ final class MovieDownloadManager: ObservableObject {
     }
     
     func getCast(for movie: Movie) {
-        let urlString = "\(Self.baseURL)\(movie.id ?? 100)/credits?api_key=\(API.key)&language=en-US"
+        let urlString = "\(Self.baseURL)\(movie.id ?? 100)/credits?api_key=\(API.key)&language=ja-JP"
         NetworkManager<CastResponse>.fetch(from: urlString) { (result) in
             switch result {
             case .success(let response):
